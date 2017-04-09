@@ -49,6 +49,15 @@ body{
     display: table;
 }
 
+.center{
+    
+    margin: auto;
+    width: 60%;
+    border: 3px double #73AD21;
+    padding: 10px;
+}
+
+
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
     .cancelbtn, .signupbtn {
@@ -56,11 +65,12 @@ body{
     }
 }
 </style>
+<h1></h1>
 <body>
+<div class="center">
+<h2 align = "center"><u><i>Register</i></u></h2>
 
-<h2 align = "center">Signup Form</h2>
-
-<form action="main.php" style="border:1px solid #ccc">
+<form action="main.php">
   <div class="container">
   	<label><b>Name</b></label>
     <input type="text" placeholder="Enter name" name="nam" required>
@@ -83,6 +93,7 @@ body{
       <button type="button" class="cancelbtn">Cancel</button>
       <button type="submit" class="signupbtn">Sign Up</button>
     </div>
+  </div>
   </div>
 </form>
 

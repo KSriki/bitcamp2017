@@ -8,9 +8,20 @@ form{
 body{
 	background-color: #4DB8FF;
 }
+.center{
+	
+    margin: auto;
+    width: 60%;
+    border: 3px double #73AD21;
+    padding: 10px;
+}
+
 </style>
-<h1 align = "center"> Congratulations !</h1>
+<h1></h1>
 <body>
+	<div class="center">
+	<h1 align = "center"> Congratulations !</h1>
+    
 <?php
 	session_start();
 	require_once("pivot.php");
@@ -33,5 +44,6 @@ EOBODY;
 	$page = generatePage($body);
 	echo $page;
 ?>
+</div>
 </body>
 </html>
