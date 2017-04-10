@@ -7,11 +7,6 @@ app = Flask(__name__)
 def run_page():
     unfollow_name = "TechCrunch"
     import tweepy
-    SCREEN_NAME = 'nisha131994'
-    CONSUMER_KEY = '6zV5gjJa11GAosOQanfpkAmYs'
-    CONSUMER_SECRET = 'DrbAdwlwg9ekezyIHOxAlGQIkITHhCoWFaY3EWbqjRVtrn9u3f'
-    ACCESS_TOKEN = '136941431-mVOpaxVfdULOpRT26sbFli5CuxpVBooJkjTaYZWt'
-    ACCESS_TOKEN_SECRET = 'lfpjkJJvrgt9nt6OILVBgBlqZiPUydaq6QvdErIIXFFMT'
     suggestion = []
     auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
     auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
@@ -31,7 +26,6 @@ def run_page():
         result = 'none'
     else:
         result = suggestion
-    #result = twitter_user_suggestions('nisha131994',unfollow_name, '6zV5gjJa11GAosOQanfpkAmYs','DrbAdwlwg9ekezyIHOxAlGQIkITHhCoWFaY3EWbqjRVtrn9u3f', '136941431-mVOpaxVfdULOpRT26sbFli5CuxpVBooJkjTaYZWt', 'lfpjkJJvrgt9nt6OILVBgBlqZiPUydaq6QvdErIIXFFMT')
     if 'none' in result:
         print "Not found on Twitter"
     else:
